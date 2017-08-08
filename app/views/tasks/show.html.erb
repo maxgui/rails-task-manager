@@ -1,6 +1,12 @@
-<h2> <%= @task.title %></h2>
-<p> <%= @task.description %></p>
+<div class="container text-center">
+  <div class="col-md-6 col-md-offset-3">
+    <div class="show-task">
+    <h2> <%= @task.title.capitalize %> <i class="fa fa-tasks" aria-hidden="true"></i></h2>
+    <p> <%= @task.description.capitalize %> <i class="fa fa-check" aria-hidden="true"></i></p>
 
-<%= link_to "Edit this task?", edit_task_path(@task) %>
-<%= link_to 'delete', task_path(@task), method: :delete, data: { confirm: "Are you sure?" } %>
-<%= link_to "Back to Tasks Manager", tasks_path %>
+    <%= link_to "Edit this task?", edit_task_path(@task), class: 'btn btn-warning' %>
+    <%= link_to 'Delete task', task_path(@task), method: :delete, data: { confirm: "Are you sure?" }, class: 'btn btn-danger' %>
+    <%= link_to "Back to Tasks Manager", tasks_path, class: 'btn btn-primary' %>
+    </div>
+  </div>
+</div>

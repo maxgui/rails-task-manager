@@ -13,3 +13,60 @@
  *= require_tree .
  *= require_self
  */
+
+.show-task {
+  border: 1px solid lightgrey;
+  padding: 10px 20px;
+  background-color: rgb(220, 220, 220);
+  border-radius: 3px;
+  margin-top: 30px;
+  box-shadow: 2px 2px 3px rgba(20, 20, 20, 0.1)
+}
+
+.form-group {
+  border: 1px solid lightgrey;
+  padding: 10px 20px;
+  background-color: rgb(220, 220, 220);
+  border-radius: 3px;
+  margin-top: 30px;
+  box-shadow: 2px 2px 3px rgba(20, 20, 20, 0.1)
+}
+
+.tasks {
+  border: 1px solid lightgrey;
+  padding: 10px 20px;
+  background-color: rgb(220, 220, 220);
+  border-radius: 3px;
+  margin-top: 30px;
+  box-shadow: 2px 2px 3px rgba(20, 20, 20, 0.1);
+  margin-bottom: 30px;
+}
+
+.task {
+  background-color: yellow;
+  border-radius: 3px;
+  margin: 23px 80px;
+  padding: 2px 0px;
+}
+
+.task:hover {
+  opacity: 0.8;
+}
+
+.form-control {
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-family: 'Saira';
+  font-weight: 600;
+  color: #37c8a1;
+}
+
+h3 > a {
+  color: purple;
+}
+
+h3 > a:hover {
+  text-decoration: none;
+}

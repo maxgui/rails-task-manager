@@ -1,8 +1,13 @@
-<%= form_for @task do |f| %>
-<%= f.label :title, "Title" %>
-<%= f.text_field :title %>
-<%= f.label :description, "Description" %>
-<%= f.text_field :description  %>
-<%= f.submit  %>
+<div class="col-md-6 col-md-offset-3">
+  <div class="form-group">
+  <%= form_for @task do |f| %>
+  <%= f.label :title, "Title" %>
+  <%= f.text_field :title, class: 'form-control' %>
+  <%= f.label :description, "Description" %>
+  <%= f.text_field :description, class: 'form-control'  %>
+  <%= f.submit class: 'btn btn-primary' %>
 
-<% end %>
+  <% end %>
+  </div>
+</div>
+

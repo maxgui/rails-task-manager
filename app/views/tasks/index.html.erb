@@ -1,10 +1,19 @@
-<h1> Welcome to your task manager Maxou</h1>
+<div class="container text-center">
+  <div class="col-md-6 col-md-offset-3">
+    <div class="tasks">
+      <h1> Welcome to your task manager Maxou</h1>
 
-<%= link_to "Add a task", new_task_path  %>
+      <%= link_to "Add a task", new_task_path, class: 'btn btn-success' %>
 
-<h2> Today's tasks</h2>
+      <h2> Today's tasks</h2>
 
-<% @tasks.each do |task| %>
-<h3> <%= link_to task.title, task_path(task)%> </h3>
-<p> <%= task.description %> </p>
-<% end %>
+        <% @tasks.each do |task| %>
+        <div class="task">
+        <h3> <%= link_to task.title.capitalize, task_path(task)%> </h3>
+        <p> <%= task.description.capitalize %> </p>
+        </div>
+        <% end %>
+
+    </div>
+  </div>
+</div>
